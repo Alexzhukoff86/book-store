@@ -1,3 +1,9 @@
 [submodule "book-service"]
 	path = book-service
 	url = https://github.com/Alexzhukoff86/book-service
+[submodule "book-shared"]
+	path = book-shared
+	url = https://github.com/Alexzhukoff86/book-shared
+[submodule "account-service"]
+	path = account-service
+	url = https://github.com/Alexzhukoff86/account-service
