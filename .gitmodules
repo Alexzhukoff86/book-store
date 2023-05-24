@@ -7,9 +7,9 @@
 [submodule "account-service"]
 	path = account-service
 	url = https://github.com/Alexzhukoff86/account-service
-[submodule "marketplace-service"]
-    path = marketplace-service
-    url = https://github.com/Alexzhukoff86/marketplace-service
 [submodule "order-service"]
-    path = order-service
-    ulr = https://github.com/Alexzhukoff86/order-service
+	path = order-service
+	url = https://github.com/Alexzhukoff86/order-service
+[submodule "marketplace-service"]
+	path = marketplace-service
+	url = https://github.com/Alexzhukoff86/marketplace-service
