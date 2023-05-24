@@ -2,11 +2,13 @@ version: "3.8"
 services:
   account-service:
     environment:
-      - SQLALCHEMY_DATABASE_URI='sqlite:///account.db'
+      - SQLALCHEMY_DATABASE_URI=sqlite:///account.db
     build:
       context: .
       dockerfile: account-service/Dockerfile
     image: account-service
+    ports:
+      - "50051:50051"
     networks:
       - book-store-network
 
