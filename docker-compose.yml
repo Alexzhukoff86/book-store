@@ -3,6 +3,7 @@ services:
   account-service:
     environment:
       - SQLALCHEMY_DATABASE_URI=sqlite:///account.db
+      - ACCOUNT_SERVICE_PORT=50051
     build:
       context: .
       dockerfile: account-service/Dockerfile
