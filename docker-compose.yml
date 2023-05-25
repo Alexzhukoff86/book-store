@@ -12,6 +12,18 @@ services:
       - "50051:50051"
     networks:
       - book-store-network
+  marketplace-service:
+    environment:
+      - ACCOUNT_SERVICE_PORT=50051
+      - ACCOUNT_SERVICE=account-service
+    build:
+      context: .
+      dockerfile: marketplace-service/Dockerfile
+    image: marketplace-service
+    ports:
+      - "5000:5000"
+    networks:
+      - book-store-network
 
 networks:
   book-store-network:
